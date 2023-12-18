@@ -1,0 +1,129 @@
+/* styles.css */
+* {
+  box-sizing: 0;
+  margin: 0%;
+
+}
+
+body {
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  /*background-image: url("/static/Images/bg1.jpg");*/
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* -----------------------Header---------------------------*/
+
+header {
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  margin-left: 10px;
+  /* Adjust the margin to provide space between logo and heading */
+}
+
+nav {
+  margin-top: 10px;
+  /* Adjust margin for space between header and navigation on desktop */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    margin-left: 0;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+}
+/* -----------------------Body---------------------------*/
+
+.main-contain {
+  width: 100%;
+  height: 500px;
+}
+
+/* -----------------------Footer---------------------------*/
+
+footer {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-media img {
+  width: 30px;
+  /* Adjust the size of social media icons */
+  margin-right: 10px;
+}
+
+.contact-details,
+.address {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .social-media img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+/*----------------------Contact----------------------*/
+
