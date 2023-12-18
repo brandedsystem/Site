@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contactus.css' %}">
     
     <title>Branded System</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="your-logo.png" alt="Your Logo">
+        <div class="logo-div">
+            <img src="static/Images/BrandedSystem.png" class="logo" alt="Your Logo">
 
         </div>
         <nav>
@@ -20,7 +22,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="contact us.html">Contact</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
             </ul>
         </nav>
     </header>
