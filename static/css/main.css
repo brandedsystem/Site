@@ -9,7 +9,7 @@ body {
   
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   /*background-image: url("/static/Images/bg1.jpg");*/
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, #58433e, #5e4837);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,8 +103,9 @@ footer {
 }
 
 .footer-cols {
-  border: 1px solid black;
+  border-top: 5px solid white;
   width: 25%;
+  padding: 10px;
 }
 
 .footer-contain-header {
@@ -149,10 +150,27 @@ footer {
   
 }
 
-.social-media {
-  display: flex;
-  
+/* Your existing CSS */
+
+.icon-social-media {
+  /* Set the width and height according to your design */
+  width: 40px;
+  height: 40px;
+ 
+
+  /* Add any other styling you need */
+  border-radius: 50%; /* Makes the icon circular (adjust as needed) */
+  background-color: #3b5998; /* Example background color for Facebook */
+   /* Ensures inline positioning */
 }
+
+/* Additional styling for hover effect (optional) */
+.icon-social-media:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+  
+
 
 
 
