@@ -3,13 +3,14 @@
   box-sizing: 0;
   margin: 0%;
 
+
 }
 
 body {
   
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   /*background-image: url("/static/Images/bg1.jpg");*/
-  background: linear-gradient(to right, #58433e, #5e4837);
+  background: linear-gradient(to right, #6c1777, #a71f6a);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

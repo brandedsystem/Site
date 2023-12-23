@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/contactus.css' %}">
+    <link rel="stylesheet" type="text/css" hred="{% static "css/about.css" %}">
     
     <title>Branded System</title>
 </head>
@@ -14,14 +15,14 @@
 <body>
     <header>
         <div class="logo-div">
-            <img src="static/Images/BrandedSystem.png" class="logo" alt="Your Logo">
+            <img src="{% static 'Images/BrandedSystem.png' %}" class="logo" alt="Your Logo">
 
         </div>
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="#">Service</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="{% url "about" %}">About</a></li>
                 <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
             </ul>
         </nav>
