@@ -1,50 +1,23 @@
-* {
-    margin: 0;
-    box-sizing: 0;
-    padding: 0;
+body .form-control {
+    background-color: transparent;
+    color: white;
+    
 }
-.con-contain {
-    display: flex;
-    width: 100%;
-    height: auto;
+.contact-img {
     
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  }
-.contact-contain {
-    flex-direction: column;
-    
-    margin: 30px;
-    padding: 40px;
+}
 
-}
-#contact-artical {
-    width:40%;
 
-}
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    justify-content: center;
-    position: relative;
-    
-}
 .Heading {
-    margin-bottom: 30px;
+    margin-top: 10px;
     text-align: center;
+    padding: 10px;
     font-style: italic;
     font-weight: bold;
     font-size: x-large;
+    color: wheat;
     font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
-
-
-/* .lbl-heading {
-    
-    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-} */
-
 .txt {
     width:100% ;
     height: 30px;

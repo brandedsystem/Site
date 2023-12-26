@@ -1,13 +1,4 @@
-/* styles.css */
-* {
-  box-sizing: 0;
-  margin: 0%;
-
-
-}
-
 body {
-  
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   /*background-image: url("/static/Images/bg1.jpg");*/
   background: linear-gradient(to right, #6c1777, #a71f6a);
@@ -19,34 +10,26 @@ body {
 
 /* -----------------------Header---------------------------*/
 
-header {
-  background-color: transparent;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-contain {
+  background-color: #6c1777;
+  border-bottom: 1px solid white;
 }
 
-.logo-div {
-  display: flex;
-  align-items: center;
+header {
+  background-color: transparent;
+  color: white;  
+  
 }
+
 .logo {
   height: 70px;
   width: 150px;
-} 
-
-h1 {
-  margin: 0;
-  margin-left: 10px;
-  /* Adjust the margin to provide space between logo and heading */
+ 
 }
 
 nav {
   margin-top: 10px;
-  /* Adjust margin for space between header and navigation on desktop */
+  
 }
 
 nav ul {
@@ -65,8 +48,31 @@ nav a {
   text-decoration: none;
   color: white;
 }
+nav a:hover {
+  color:red;
+}
 
-/* Responsive Styles */
+/* ---------------------------------------------------------------------- */
+
+h1.wlc-heading {
+  color: white;
+  font-style: italic;
+  animation: fadeIn 6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -84,72 +90,38 @@ nav a {
     margin-top: 20px;
   }
 }
-/* -----------------------Body---------------------------*/
 
-.main-contain {
-  width: 100%;
+
+/* -----------------------UserForms---------------------------*/
+
+.form {
+  padding: 10px;
+  
+    
 }
+
+.form h2 {
+  color: white;
+}
+
+
+
+.loginForm {
+  display: none;
+}
+
 
 /* -----------------------Footer---------------------------*/
 
 footer {
-  background-color: transparent;
-  color:black;
+  background-color: #6c1777;
+  color: wheat;
   padding: 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-cols {
-  border-top: 5px solid white;
-  width: 25%;
-  padding: 10px;
-}
-
-.footer-contain-header {
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
-  font-family: system-ui, '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto, Oxygen, Ubuntu, Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  font-size: large;
-  font-style: italic;
+  border-top:2px solid white ;
   
 }
 
-.Company-about {
-  text-align: justify;
-  padding: 5px;
 
-}
-.footer-service-list {
-  list-style-type: none;
-  padding-left: 20px;
-  
-}
-
-.footer-service-list li {
-  margin: 10px;
-  
-}
-.footer-service-con {
-  list-style-type: none;
-  padding-left: 20px;
-}
-.footer-service-con label {
-  font-size: large;
-  font-weight: bold;
-  
-}
-
-.footer-service-con li {
-  padding-left: 10px;
-  margin-top: 10px;
-  
-}
 
 /* Your existing CSS */
 
@@ -157,20 +129,23 @@ footer {
   /* Set the width and height according to your design */
   width: 40px;
   height: 40px;
- 
+
 
   /* Add any other styling you need */
-  border-radius: 50%; /* Makes the icon circular (adjust as needed) */
-  background-color: #3b5998; /* Example background color for Facebook */
-   /* Ensures inline positioning */
+  border-radius: 50%;
+  /* Makes the icon circular (adjust as needed) */
+  background-color: #3b5998;
+  /* Example background color for Facebook */
+  /* Ensures inline positioning */
 }
 
 /* Additional styling for hover effect (optional) */
 .icon-social-media:hover {
-  opacity: 0.8; /* Reduce opacity on hover */
+  opacity: 0.8;
+  /* Reduce opacity on hover */
 }
 
-  
+
 
 
 
@@ -189,8 +164,12 @@ footer {
 
 
 
+/*---------------------- BootStrap ----------------------*/
+.footer_name {
+  font-size:medium;
+  color: white;
+  font-weight: bold;
+  
+  font-style: italic;
 
-
-
-/*----------------------Contact----------------------*/
-
+}
