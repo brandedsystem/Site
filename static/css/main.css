@@ -1,59 +1,26 @@
-/* styles.css */
-* {
-  box-sizing: 0;
-  margin: 0%;
-
-}
-
-body {
-  
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  /*background-image: url("/static/Images/bg1.jpg");*/
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
 /* -----------------------Header---------------------------*/
 
-header {
-  background-color: transparent;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-contain {
+  background-color: #4231d4;
+  border-bottom: 1px solid white;
 }
 
-.logo-div {
-  display: flex;
-  align-items: center;
-}
+
 .logo {
   height: 70px;
   width: 150px;
-} 
 
-h1 {
-  margin: 0;
-  margin-left: 10px;
-  /* Adjust the margin to provide space between logo and heading */
 }
 
-nav {
-  margin-top: 10px;
-  /* Adjust margin for space between header and navigation on desktop */
-}
+
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+
 }
 
 nav li {
@@ -65,7 +32,31 @@ nav a {
   color: white;
 }
 
-/* Responsive Styles */
+nav a:hover {
+  color: red;
+}
+
+/* ---------------------------------------------------------------------- */
+
+h1.wlc-heading {
+
+  font-style: italic;
+  animation: fadeIn 6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -83,76 +74,134 @@ nav a {
     margin-top: 20px;
   }
 }
-/* -----------------------Body---------------------------*/
 
-.main-contain {
-  width: 100%;
+
+/* -----------------------UserForms---------------------------*/
+
+.form {
+  padding: 10px;
+
+
 }
+
+.form h2 {
+  color: white;
+}
+
+
+
+.loginForm {
+  display: none;
+}
+
 
 /* -----------------------Footer---------------------------*/
 
 footer {
-  background-color: transparent;
-  color:black;
+  background-color: #233481;
+
   padding: 20px;
+  border-top: 2px solid white;
+
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-cols {
-  border: 1px solid black;
-  width: 25%;
-}
-
-.footer-contain-header {
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
-  font-family: system-ui, '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto, Oxygen, Ubuntu, Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  font-size: large;
+.compnay-section {
   font-style: italic;
-  
 }
 
-.Company-about {
-  text-align: justify;
-  padding: 5px;
-
-}
-.footer-service-list {
-  list-style-type: none;
-  padding-left: 20px;
-  
+.compnay-section article {
+  font-weight: 450;
+  font-size: medium;
 }
 
-.footer-service-list li {
-  margin: 10px;
-  
-}
-.footer-service-con {
-  list-style-type: none;
-  padding-left: 20px;
-}
-.footer-service-con label {
-  font-size: large;
-  font-weight: bold;
-  
+/*-----------------------------support section-----------------------------------------*/
+
+.support-section {
+  font-style: italic;
 }
 
-.footer-service-con li {
-  padding-left: 10px;
-  margin-top: 10px;
-  
+.support-section h2 {
+  color: white;
+  /* Set your heading color */
 }
 
-.social-media {
-  display: flex;
-  
+.support-section ul {
+  padding: 0;
+  font-size: medium;
+  list-style: none;
 }
+
+.support-section li {
+  margin-bottom: 10px;
+}
+
+.support-section a {
+  text-decoration: none;
+  color: white;
+  /* Set your link color */
+}
+
+.support-section a:hover {
+  color: red;
+}
+
+/*-----------------------------Service section-----------------------------------------*/
+.service-section {
+  font-style: italic;
+}
+
+.service-section h2 {
+  color: white;
+  /* Set your heading color */
+}
+
+.service-section ul {
+  padding: 0;
+  font-size: medium;
+  list-style: none;
+}
+
+.service-section li {
+  margin-bottom: 10px;
+}
+
+.service-section a {
+  text-decoration: none;
+  color: white;
+  /* Set your link color */
+}
+
+.service-section a:hover {
+  color: red;
+}
+
+
+
+
+/* Your existing CSS */
+
+.icon-social-media {
+  /* Set the width and height according to your design */
+  width: 40px;
+  height: 40px;
+
+
+  /* Add any other styling you need */
+  border-radius: 50%;
+  /* Makes the icon circular (adjust as needed) */
+  background-color: #3b5998;
+  /* Example background color for Facebook */
+  /* Ensures inline positioning */
+}
+
+/* Additional styling for hover effect (optional) */
+.icon-social-media:hover {
+  opacity: 0.8;
+  /* Reduce opacity on hover */
+}
+
+
+
 
 
 
@@ -170,8 +219,12 @@ footer {
 
 
 
+/*---------------------- BootStrap ----------------------*/
+.footer_name {
+  font-size: medium;
+  color: white;
+  font-weight: bold;
 
+  font-style: italic;
 
-
-/*----------------------Contact----------------------*/
-
+}

@@ -1,24 +1,39 @@
 {% load static %}
 {% include "header.html" %}
-    <div class="con-contain">
-        <div class="contact-contain" id="contact-artical">
-            we
-        </div>
-        <div class="contact-contain" id="contact-form">
-            <div class="Heading"> Contact Us </div>
-            <form>              
 
-                <label class="lbl">First Name :</label><br>
-                <input class="txt" type="text" name="Firstname" placeholder="Enter Your First Name"><br>
-                <label class="lbl">Last Name :</label><br>
-                <input class="txt" type="text" name="lastname" placeholder="Enter Your Last name"><br>
-                <label class="lbl">Email:</label><br>
-                <input class="txt" type="email" name="email" placeholder="Enter Your Email "><br>
-                <label class="lbl">Message :</label><br>
-                <textarea cols="5" rows="5" placeholder="Enter Your Messages"></textarea>
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
+
+<div class="container-fluid">
+    <div class="row pb-3">
+        <div class="col-lg-3">
+            <div class="container-fluid">
+                <img src="{% static '/Images/contact-us.png'%}" class="img-fluid contact-img"/>
+            </div>
         </div>
-    
+        <div class="col-lg-9">
+            <div class="container col-lg-10">
+                <div class="Heading"> Contact Us </div>
+                <form>
+                    <div class="fullName">
+                      <label for="fullName" class="form-label lbl">Full Name :</label>
+                      <input type="text" class="form-control txt1" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="Mobile No">
+                      <label for="mobileNo" class="form-label lbl">Mobile No :</label>
+                      <input type="text" class="form-control txt1" id="Mobile No" name="Mobile No" placeholder="Enter Your Mobile No" required>
+                    </div>
+                    <div class="email">
+                      <label for="email" class="form-label lbl">Email :</label>
+                      <input type="email" class="form-control txt1" id="email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="Message">
+                      <label for="message" class="form-label lbl">Message :</label>
+                      <textarea class="form-control textarea" id="message" name="message" rows="5" placeholder="Enter Your Messages" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                  </form>  
+                </div>          
+            </div>            
+        </div>
     </div>
+</div>
     {% include "footer.html" %}
