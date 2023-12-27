@@ -16,33 +16,27 @@
     <title>Branded System</title>
 </head>
 
-<body>
+<body style="background-color: gray;">
     
-    <header class="container-fluid header-contain">
+    <header class="container-fluid  header-contain">
         <div class="row">
             <div class="col-lg-2">
-                <img src="{% static 'Images/BrandedSystem.png' %}" class="logo img-fluid" alt="Your Logo">
+                <img src="{% static 'Images/BrandedSystem.png' %}" class="logo img-fluid" alt="Logo">
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-10 d-flex justify-content-end">
                 <nav class="navbar">
                     <ul>
                         <li><a href="{% url 'index' %}">Home</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="{% url "about" %}">About</a></li>
                         <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
-                    </ul>                                
-                </nav>
-            </div>
-            <div class="col-lg-3 p-2">
-                <nav>
-                    <ul class="user">
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Log In</a></li>                        
-                    </ul>                                
+                    </ul>
                 </nav>
             </div>
         </div>
-        <!--
+    </header>
+  
+         <!--
         <div class="logo-div">
             <img src="{% static 'Images/BrandedSystem.png' %}" class="logo" alt="Your Logo">
 

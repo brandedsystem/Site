@@ -1,43 +1,26 @@
-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  /*background-image: url("/static/Images/bg1.jpg");*/
-  background: linear-gradient(to right, #6c1777, #a71f6a);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
 /* -----------------------Header---------------------------*/
 
 .header-contain {
-  background-color: #6c1777;
+  background-color: #4231d4;
   border-bottom: 1px solid white;
 }
 
-header {
-  background-color: transparent;
-  color: white;  
-  
-}
 
 .logo {
   height: 70px;
   width: 150px;
- 
+
 }
 
-nav {
-  margin-top: 10px;
-  
-}
+
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+
 }
 
 nav li {
@@ -48,25 +31,26 @@ nav a {
   text-decoration: none;
   color: white;
 }
+
 nav a:hover {
-  color:red;
+  color: red;
 }
 
 /* ---------------------------------------------------------------------- */
 
 h1.wlc-heading {
-  color: white;
+
   font-style: italic;
   animation: fadeIn 6s ease-in;
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
 
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -96,8 +80,8 @@ h1.wlc-heading {
 
 .form {
   padding: 10px;
-  
-    
+
+
 }
 
 .form h2 {
@@ -114,12 +98,83 @@ h1.wlc-heading {
 /* -----------------------Footer---------------------------*/
 
 footer {
-  background-color: #6c1777;
-  color: wheat;
+  background-color: #233481;
+
   padding: 20px;
-  border-top:2px solid white ;
-  
+  border-top: 2px solid white;
+
 }
+
+.compnay-section {
+  font-style: italic;
+}
+
+.compnay-section article {
+  font-weight: 450;
+  font-size: medium;
+}
+
+/*-----------------------------support section-----------------------------------------*/
+
+.support-section {
+  font-style: italic;
+}
+
+.support-section h2 {
+  color: white;
+  /* Set your heading color */
+}
+
+.support-section ul {
+  padding: 0;
+  font-size: medium;
+  list-style: none;
+}
+
+.support-section li {
+  margin-bottom: 10px;
+}
+
+.support-section a {
+  text-decoration: none;
+  color: white;
+  /* Set your link color */
+}
+
+.support-section a:hover {
+  color: red;
+}
+
+/*-----------------------------Service section-----------------------------------------*/
+.service-section {
+  font-style: italic;
+}
+
+.service-section h2 {
+  color: white;
+  /* Set your heading color */
+}
+
+.service-section ul {
+  padding: 0;
+  font-size: medium;
+  list-style: none;
+}
+
+.service-section li {
+  margin-bottom: 10px;
+}
+
+.service-section a {
+  text-decoration: none;
+  color: white;
+  /* Set your link color */
+}
+
+.service-section a:hover {
+  color: red;
+}
+
 
 
 
@@ -166,10 +221,10 @@ footer {
 
 /*---------------------- BootStrap ----------------------*/
 .footer_name {
-  font-size:medium;
+  font-size: medium;
   color: white;
   font-weight: bold;
-  
+
   font-style: italic;
 
 }
