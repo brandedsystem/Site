@@ -10,5 +10,5 @@ def contact_us(request):
 def about_us(request):
     return render(request, "about.html")
 
-def service(request):
-    return render(request, "service.html")
+def product(request):
+    return render(request, "product.html")
